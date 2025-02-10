@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delightful Bites | Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Verdana', sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #e3f2fd;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #0077c2;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 10px 0;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0077c2;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x300?text=Welcome+to+Delightful+Bites') no-repeat center;
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .hero h2 {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .menu-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    .menu-section h3 {
+      color: #0077c2;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .menu-item {
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+      max-height: 150px;
+      object-fit: cover;
+    }
+    .menu-item h4 {
+      color: #333;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .menu-item p {
+      color: #777;
+      font-size: 0.9rem;
+    }
+    .menu-item .price {
+      color: #0077c2;
+      font-weight: bold;
+      margin-top: 5px;
+      font-size: 0.9rem;
+    }
+    footer {
+      background-color: #e3f2fd;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+      color: #0077c2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Crazy Restaurant</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="menu" class="menu-section">
+    <h3>Menu</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://assets.surlatable.com/m/15a89c2d9c6c1345/72_dpi_webp-REC-283110_Pizza.jpg" alt="Pizza">
+        <h4>Margherita Pizza</h4>
+        <p>Classic Italian pizza with fresh mozzarella and basil.</p>
+        <div class="price">Rs 350</div>
+      </div>
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/800px-Cheeseburger.jpg" alt="Burger">
+        <h4>Cheesy Burger</h4>
+        <p>Juicy beef patty with melted cheese and fresh veggies.</p>
+        <div class="price">Rs 120</div>
+      </div>
+      <div class="menu-item">
+        <img src="https://grilledcheesesocial.com/wp-content/uploads/2024/04/penne-alfredo-pasta-recipe-18.jpg" alt="Pasta">
+        <h4>Alfredo Pasta</h4>
+        <p>Creamy Alfredo sauce with perfectly cooked pasta.</p>
+        <div class="price">Rs 150</div>
+      </div>
+      <div class="menu-item">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/easy-no-bake-desserts-oreo-pie-645d1a6b9c9d7.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Dessert">
+        <h4>Chocolate Lava Cake</h4>
+        <p>Rich chocolate cake with a gooey center.</p>
+        <div class="price">Rs 100</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

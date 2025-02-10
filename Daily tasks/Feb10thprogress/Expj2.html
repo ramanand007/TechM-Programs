@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Club Registration</title>
+  <style>
+    body {
+      font-family: 'Verdana', sans-serif;
+      background-color: yellow;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      background: burlywood;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .form-section {
+      margin-bottom: 20px;
+    }
+
+    .form-section legend {
+      font-size: 1.2em;
+      color: #1d3557;
+    }
+
+    button {
+      background-color: #1d3557;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  
+
+    .checkbox-group, .radio-group {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Anurag University Registration</h1>
+
+  <form action="#" method="POST">
+    
+    <!-- Personal Details -->
+    <fieldset class="form-section">
+      <legend>Personal Information</legend>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" >
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" >
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" >
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+    </fieldset>
+
+    <!-- Membership Preferences -->
+    <fieldset class="form-section">
+      <legend>Sports Interests</legend>
+      <label>Select Your Favorite Sports:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="sports" value="Football"> Football</label>
+        <label><input type="checkbox" name="sports" value="Cricket"> Cricket</label>
+        <label><input type="checkbox" name="sports" value="Basketball"> Basketball</label>
+        <label><input type="checkbox" name="sports" value="Tennis"> Tennis</label>
+      </div>
+    </fieldset>
+
+    <!-- Gender Selection -->
+    <fieldset class="form-section">
+      <legend>Gender</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+    </fieldset>
+
+    <!-- Address Section -->
+    <fieldset class="form-section">
+      <legend>Address</legend>
+      <label for="address">Residential Address:</label>
+      <textarea id="address" name="address" rows="3" placeholder="Enter your full address"></textarea>
+    </fieldset>
+
+    <!-- Submit Section -->
+    <button type="submit">Submit Registration</button>
+  </form>
+
+</body>
+</html>
