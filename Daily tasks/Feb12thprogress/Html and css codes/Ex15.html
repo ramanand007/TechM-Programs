@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Three Numbers</title>
+</head>
+<body>
+    <script>
+        function sortNumbers(a, b, c) {
+            let sorted = [a, b, c].sort((x, y) => y - x);
+            alert(sorted.join(", "));
+        }
+        sortNumbers(0, -1, 4);
+    </script>
+</body>
+</html>

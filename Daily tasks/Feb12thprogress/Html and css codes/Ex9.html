@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Number</title>
+</head>
+<body>
+    <script>
+        let n = Math.floor(Math.random() * 10) + 1;
+        let g = parseInt(prompt("Guess a number between 1 and 10:"));
+        alert(g === n ? "Good Work" : "Not matched");
+    </script>
+</body>
+</html>
