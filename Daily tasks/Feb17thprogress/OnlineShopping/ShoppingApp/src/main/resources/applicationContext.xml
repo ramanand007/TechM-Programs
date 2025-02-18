@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+    <!-- Amazon Shopping Bean -->
+    <bean id="amazonShopping" class="com.shopping.service.AmazonShopping"/>
+
+    <!-- Flipkart Shopping Bean -->
+    <bean id="flipkartShopping" class="com.shopping.service.FlipkartShopping"/>
+
+    <!-- Online Shopping Bean -->
+    <bean id="shoppingService" class="com.shopping.service.OnlineShoppingService">
+        <property name="shopping" ref="amazonShopping"/>
+    </bean>
+
+</beans>
