@@ -1,0 +1,6 @@
+com\app\Log4jController.class
+com\app\SpringBootDataJpaMysqlApplication.class
+com\app\runner\MyRunner.class
+com\app\repo\ProductRepository.class
+com\app\model\Product.class
+com\app\repo\ProductRepository$myView.class
