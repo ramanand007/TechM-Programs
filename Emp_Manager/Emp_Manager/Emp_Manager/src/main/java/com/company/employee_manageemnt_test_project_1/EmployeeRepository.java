@@ -1,0 +1,7 @@
+package com.company.employee_manageemnt_test_project_1;
+
+import com.company.employee_manageemnt_test_project_1.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+@SuppressWarnings("unused")
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {}
